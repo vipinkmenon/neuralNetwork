@@ -1,0 +1,14 @@
+    (
+    input           clk,
+    input           rst,
+    input           weightValid,
+    input           biasValid,
+    input [31:0]    weightValue,
+    input [31:0]    biasValue,
+    input [31:0]    config_layer_num,
+    input [31:0]    config_neuron_num,
+    input           x_valid,
+    input [dataWidth-1:0]    x_in,
+    output [NN-1:0]     o_valid,
+    output [NN*dataWidth-1:0]  x_out
+    );
